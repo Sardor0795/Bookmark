@@ -65,8 +65,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dashed var(--main-color);
-  outline-offset: 3px;
+  outline: unset;
 }
 
 body {
@@ -164,6 +163,146 @@ select:-webkit-autofill:focus {
 
 .main-content {
   flex-grow: 1;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  transition: 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.logo:active {
+  opacity: 0.6;
+}
+
+.logo__img {
+  width: 149px;
+  height: 25px;
+}
+
+/* NAV */
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 44px;
+}
+
+.nav__link {
+  color: var(--black);
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  transition: 0.3s ease;
+}
+
+.nav__link:hover {
+  color: var(--red);
+}
+
+.nav__link:active {
+  opacity: 0.6;
+}
+
+/* BTNS */
+
+.btn {
+  padding: 8px 24px;
+  border: 2px solid transparent;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  transition: background-color 0.3s ease, color 0.3s ease, oppacity 0.3s ease;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.btn--login {
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  background-color: var(--red);
+}
+
+.btn--login:hover {
+  background-color: #fff;
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.btn--full {
+  width: 100%;
+  background-color: var(--blue);
+}
+
+.btn--full:hover {
+  background-color: #fff;
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn--blue {
+  background-color: var(--blue);
+}
+
+.btn--blue:hover {
+  background-color: #fff;
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn--get {
+  background-color: #f7f7f7;
+  color: var(--gray);
+}
+
+.btn--get:hover {
+  border-color: var(--gray);
+}
+
+.btn--contact {
+  background-color: var(--red);
+}
+
+.btn--contact:hover {
+  background-color: #fff;
+  color: var(--red);
+  border-color: var(--red);
+}
+
+/* HEADER */
+
+.header {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  text-transform: uppercase;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header_nav {
+  margin-right: 48px;
 }
 
 /* RETINA BG */
