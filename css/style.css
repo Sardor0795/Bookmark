@@ -1,10 +1,56 @@
+/* CUSTOM PROPS */
+
+:root {
+  --blue: #5267df;
+  --red: #fa5959;
+  --black: #242a45;
+  --black: #242a45;
+  --gray: #9194a2;
+  --gray-50: rgba(145, 148, 162, 0.5);
+  --gray-75: rgba(145, 148, 162, 0.75);
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Bold.woff2") format("woff2"),
+    url("../font/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-SemiBoldItalic.woff2") format("woff2"),
+    url("../font/Poppins-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-Regular.woff2") format("woff2"),
+    url("../font/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../font/Poppins-SemiBold.woff2") format("woff2"),
+    url("../font/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* GLOBAL */
 
 /* input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" */
-
-:root {
-  --main-color: #3f3f3f;
-}
 
 html {
   box-sizing: border-box;
@@ -28,12 +74,13 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  color: var(--gray-50);
+  font-family: "Poppins", "Arial", sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 a {
@@ -69,7 +116,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1210px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
