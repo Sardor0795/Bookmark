@@ -1,11 +1,11 @@
 /* CUSTOM PROPS */
 
 :root {
-  --blue: #5267df;
   --red: #fa5959;
-  --black: #242a45;
-  --black: #242a45;
   --gray: #9194a2;
+  --blue: #5267df;
+  --black: #242a45;
+  --black: #242a45;
   --gray-50: rgba(145, 148, 162, 0.5);
   --gray-75: rgba(145, 148, 162, 0.75);
 }
@@ -53,8 +53,8 @@
 /* input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" */
 
 html {
-  box-sizing: border-box;
   height: 100%;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -70,13 +70,13 @@ html {
 
 body {
   display: flex;
-  flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: var(--gray-50);
+  color: var(--gray);
   font-family: "Poppins", "Arial", sans-serif;
   padding: 0;
   margin: 0;
+  flex-direction: column;
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
@@ -303,6 +303,56 @@ select:-webkit-autofill:focus {
 
 .header__nav {
   margin-right: 48px;
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url("../img/Rectangle.svg");
+  background-repeat: no-repeat;
+  background-size: 1000px 352px;
+  background-position: left calc(50% + 700px) bottom;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero__content {
+  width: 100%;
+  width: 540px;
+  flex-shrink: 0;
+  margin-right: 65px;
+  padding-top: 68px;
+}
+
+.hero__heading {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 52px;
+  letter-spacing: -0.15px;
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.hero__btn:first-child {
+  margin-right: 16px;
+}
+
+.hero__img {
+  flex-shrink: 0;
+  object-fit: contain;
+  width: 578px;
+  height: 385px;
 }
 
 /* RETINA BG */
