@@ -69,17 +69,17 @@ html {
 }
 
 body {
-  display: flex;
-  height: 100%;
-  background-color: #fff;
-  color: var(--gray);
-  font-family: "Poppins", "Arial", sans-serif;
-  padding: 0;
   margin: 0;
-  flex-direction: column;
-  font-weight: 400;
+  padding: 0;
+  height: 100%;
+  display: flex;
   font-size: 18px;
+  font-weight: 400;
   line-height: 28px;
+  color: var(--gray);
+  flex-direction: column;
+  background-color: #fff;
+  font-family: "Poppins", "Arial", sans-serif;
 }
 
 a {
@@ -107,8 +107,8 @@ button {
 
 button {
   border: none;
-  background: none;
   cursor: pointer;
+  background: none;
 }
 
 /* CONTAINER */
@@ -116,10 +116,10 @@ button {
 .container {
   width: 100%;
   max-width: 1210px;
-  padding-left: 50px;
-  padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 /* PLACEHOLDER STYLE */
@@ -149,14 +149,14 @@ select:-webkit-autofill:focus {
 /* ELEMENT HIDER */
 
 .visually-hidden {
-  position: absolute;
+  border: 0;
   width: 1px;
+  padding: 0;
   height: 1px;
   margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
 }
 
 /* MAIN CONTENT */
@@ -197,11 +197,11 @@ select:-webkit-autofill:focus {
 }
 
 .nav__link {
-  color: var(--black);
   font-size: 13px;
   line-height: 17px;
-  letter-spacing: 1.5px;
+  color: var(--black);
   transition: 0.3s ease;
+  letter-spacing: 1.5px;
 }
 
 .nav__link:hover {
@@ -215,15 +215,15 @@ select:-webkit-autofill:focus {
 /* BTNS */
 
 .btn {
-  padding: 8px 24px;
-  border: 2px solid transparent;
   color: #fff;
-  border-radius: 5px;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 28px;
+  padding: 8px 24px;
+  border-radius: 5px;
   text-align: center;
   letter-spacing: 0.25px;
+  border: 2px solid transparent;
   transition: background-color 0.3s ease, color 0.3s ease, oppacity 0.3s ease;
 }
 
@@ -239,9 +239,9 @@ select:-webkit-autofill:focus {
 }
 
 .btn--login:hover {
-  background-color: #fff;
   color: var(--red);
   border-color: var(--red);
+  background-color: #fff;
 }
 
 .btn--full {
@@ -250,9 +250,9 @@ select:-webkit-autofill:focus {
 }
 
 .btn--full:hover {
+  color: var(--blue);
   background-color: #fff;
   border-color: var(--blue);
-  color: var(--blue);
 }
 
 .btn--blue {
@@ -260,14 +260,14 @@ select:-webkit-autofill:focus {
 }
 
 .btn--blue:hover {
+  color: var(--blue);
   background-color: #fff;
   border-color: var(--blue);
-  color: var(--blue);
 }
 
 .btn--get {
-  background-color: #f7f7f7;
   color: var(--gray);
+  background-color: #f7f7f7;
 }
 
 .btn--get:hover {
@@ -279,9 +279,9 @@ select:-webkit-autofill:focus {
 }
 
 .btn--contact:hover {
-  background-color: #fff;
   color: var(--red);
   border-color: var(--red);
+  background-color: #fff;
 }
 
 /* HEADER */
@@ -310,9 +310,9 @@ select:-webkit-autofill:focus {
 .hero {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url("../img/Rectangle.svg");
   background-repeat: no-repeat;
   background-size: 1000px 352px;
+  background-image: url("../img/Rectangle.svg");
   background-position: left calc(50% + 700px) bottom;
 }
 
@@ -325,18 +325,18 @@ select:-webkit-autofill:focus {
   width: 100%;
   width: 540px;
   flex-shrink: 0;
-  margin-right: 65px;
   padding-top: 68px;
+  margin-right: 65px;
 }
 
 .hero__heading {
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 52px;
-  letter-spacing: -0.15px;
-  color: var(--black);
   margin-top: 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 52px;
   margin-bottom: 24px;
+  color: var(--black);
+  letter-spacing: -0.15px;
 }
 
 .hero__text {
@@ -349,10 +349,10 @@ select:-webkit-autofill:focus {
 }
 
 .hero__img {
-  flex-shrink: 0;
-  object-fit: contain;
   width: 578px;
   height: 385px;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 /* RETINA BG */
