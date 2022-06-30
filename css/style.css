@@ -309,7 +309,7 @@ select:-webkit-autofill:focus {
 
 .hero {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   background-repeat: no-repeat;
   background-size: 1000px 352px;
   background-image: url("../img/Rectangle.svg");
@@ -329,7 +329,7 @@ select:-webkit-autofill:focus {
   margin-right: 65px;
 }
 
-.hero__heading {
+.hero__title {
   margin-top: 0;
   font-size: 48px;
   font-weight: 500;
@@ -353,6 +353,134 @@ select:-webkit-autofill:focus {
   height: 385px;
   flex-shrink: 0;
   object-fit: contain;
+}
+
+/* FEATURES */
+
+.features {
+  padding-top: 80px;
+  padding-bottom: 90px;
+  background-repeat: no-repeat;
+  background-size: 1000px 352px;
+  background-position: left -415px bottom;
+  background-image: url("../img/Rectangle.svg");
+}
+
+.features__title {
+  margin-top: 0;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 52px;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 16px;
+  letter-spacing: -0.1px;
+}
+
+.features__text {
+  margin-top: 0;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.features__btn-wrapper {
+  display: flex;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 72px;
+  border-bottom: 1px solid var(--gray-50);
+}
+
+.features__btn {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  padding: 27px 41px;
+  white-space: nowrap;
+  letter-spacing: 0.533333px;
+  border-bottom: 4px solid transparent;
+  transition: oppacity 0.3s ease, color 0.3s ease;
+  transition: oppacity 0.3s ease, color 0.3s ease;
+}
+
+.features__btn:hover {
+  color: var(--red);
+}
+
+.features__btn:active {
+  opacity: 0.6;
+}
+
+.features__btn--active {
+  color: var(--black);
+  border-bottom-color: var(--red);
+}
+
+/* FEATURE BLOCKS */
+
+.block__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block__img {
+  object-fit: contain;
+}
+
+.block-img-1 {
+  width: 536px;
+  height: 380px;
+}
+
+.block-img-2 {
+  width: 670px;
+  height: 380px;
+}
+
+.block-img-3 {
+  width: 650px;
+  height: 380px;
+}
+
+.block__content {
+  max-width: 445px;
+}
+
+.block__title {
+  margin-top: 0;
+  font-size: 32px;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 52px;
+  color: var(--black);
+  margin-bottom: 16px;
+  letter-spacing: -0.1px;
+}
+
+.block__text {
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.el-hider {
+  display: none;
+}
+
+.el-shower {
+  display: flex;
+}
+
+/* DOWNLOAD */
+
+.download {
+  padding-top: 149px;
+  /* padding-bottom: 149px; */
 }
 
 /* RETINA BG */
