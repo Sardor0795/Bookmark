@@ -362,7 +362,7 @@ select:-webkit-autofill:focus {
   padding-bottom: 90px;
   background-repeat: no-repeat;
   background-size: 1000px 352px;
-  background-position: left -415px bottom;
+  background-position: left calc(50% - 590px) bottom;
   background-image: url("../img/Rectangle.svg");
 }
 
