@@ -426,7 +426,6 @@ select:-webkit-autofill:focus {
 .block__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .block__img {
@@ -436,16 +435,19 @@ select:-webkit-autofill:focus {
 .block-img-1 {
   width: 536px;
   height: 380px;
+  margin-right: 125px;
 }
 
 .block-img-2 {
   width: 670px;
   height: 380px;
+  margin-right: 118px;
 }
 
 .block-img-3 {
   width: 650px;
   height: 380px;
+  margin-right: 146px;
 }
 
 .block__content {
