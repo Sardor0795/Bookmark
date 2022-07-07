@@ -366,6 +366,7 @@ select:-webkit-autofill:focus {
   background-image: url("../img/Rectangle.svg");
 }
 
+.download__title,
 .features__title {
   margin-top: 0;
   font-size: 32px;
@@ -377,6 +378,7 @@ select:-webkit-autofill:focus {
   letter-spacing: -0.1px;
 }
 
+.download__text,
 .features__text {
   margin-top: 0;
   max-width: 450px;
@@ -482,7 +484,78 @@ select:-webkit-autofill:focus {
 
 .download {
   padding-top: 149px;
-  /* padding-bottom: 149px; */
+  padding-bottom: 149px;
+}
+
+.download__container {
+}
+
+.download__inner {
+  max-width: 911px;
+  margin: 0 auto;
+}
+
+.download__cards {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -34px;
+}
+
+.download__card {
+  max-width: 280px;
+  padding: 50px 24px 24px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+  border-radius: 15px;
+  position: relative;
+  margin-left: 34px;
+}
+
+.download__card:nth-child(2) {
+  margin-top: 40px;
+}
+
+.download__card:nth-child(3n) {
+  margin-top: 80px;
+}
+
+.download__card:nth-child(3n + 2) {
+  margin-top: 40px;
+}
+
+.card__img {
+  width: 102px;
+  height: 100px;
+  margin-bottom: 32px;
+  display: inline-block;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #242a45;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.card__text {
+  font-size: 15px;
+  margin-bottom: 60px;
+}
+
+.cord__dots {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 96px;
 }
 
 /* RETINA BG */
