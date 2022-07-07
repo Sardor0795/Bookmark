@@ -487,9 +487,6 @@ select:-webkit-autofill:focus {
   padding-bottom: 149px;
 }
 
-.download__container {
-}
-
 .download__inner {
   max-width: 911px;
   margin: 0 auto;
