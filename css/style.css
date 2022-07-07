@@ -566,18 +566,11 @@ select:-webkit-autofill:focus {
 
 .faq {
   margin-bottom: 150px;
-}
-
-.faq__container {
-}
-.container {
+  text-align: center;
 }
 
 .faq__text {
   margin-bottom: 56px;
-}
-
-.faq__accordion {
 }
 
 .accordion {
@@ -640,6 +633,7 @@ select:-webkit-autofill:focus {
   font-size: 16px;
   line-height: 36px;
   letter-spacing: 0.15px;
+  text-align: left;
 }
 
 .accordion__wrapper--open .accordion__content {
@@ -649,6 +643,10 @@ select:-webkit-autofill:focus {
 .accordion__wrapper--open .accordion__btn-img {
   transform: rotate(180deg);
   color: var(--red);
+}
+
+.faq__btn {
+  margin-top: 54px;
 }
 
 /* RETINA BG */

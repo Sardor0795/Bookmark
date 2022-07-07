@@ -5,6 +5,9 @@ const elSimple = document.querySelector(".simple");
 const elSpeedy = document.querySelector(".speedy");
 const elEasy = document.querySelector(".easy");
 
+const elsAccordionWrapper = document.querySelectorAll(".accordion__wrapper")
+const elsAccordionBtn = document.querySelectorAll(".accordion__btn");
+
 elBtnWrapper.addEventListener("click", function (evt) {
 
   if ( evt.target.classList.contains("features__btn")) {
@@ -76,3 +79,14 @@ elBtnWrapper.addEventListener("click", function (evt) {
   
   }
 });
+
+elsAccordionBtn.forEach(function (elAccordionBtn) {
+  elAccordionBtn.addEventListener("click", function () {
+    
+    elsAccordionWrapper.forEach(function (elAccordionWrapper) {
+      elAccordionWrapper.classList.remove("accordion__wrapper--open")
+    })
+
+    elAccordionBtn.closest(".accordion__wrapper").classList.add("accordion__wrapper--open")
+  })
+})
