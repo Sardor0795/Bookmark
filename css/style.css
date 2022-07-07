@@ -366,6 +366,7 @@ select:-webkit-autofill:focus {
   background-image: url("../img/Rectangle.svg");
 }
 
+.faq__title,
 .download__title,
 .features__title {
   margin-top: 0;
@@ -378,6 +379,7 @@ select:-webkit-autofill:focus {
   letter-spacing: -0.1px;
 }
 
+.faq__text,
 .download__text,
 .features__text {
   margin-top: 0;
@@ -487,6 +489,11 @@ select:-webkit-autofill:focus {
   padding-bottom: 149px;
 }
 
+.download__text,
+.faq__text {
+  max-width: 540px;
+}
+
 .download__inner {
   max-width: 911px;
   margin: 0 auto;
@@ -553,6 +560,95 @@ select:-webkit-autofill:focus {
   position: absolute;
   left: 0;
   bottom: 96px;
+}
+
+/* FAQ */
+
+.faq {
+  margin-bottom: 150px;
+}
+
+.faq__container {
+}
+.container {
+}
+
+.faq__text {
+  margin-bottom: 56px;
+}
+
+.faq__accordion {
+}
+
+.accordion {
+  max-width: 540px;
+  margin: 0 auto;
+  border-top: 1px solid var(--gray-50);
+}
+
+.accordion__wrapper {
+  border-bottom: 1px solid var(--gray-50);
+}
+
+.accordion__header {
+  display: flex;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+
+.accordion__header:hover .accordion__title {
+  color: var(--red);
+}
+
+.accordion__title {
+  display: inline-block;
+  margin-right: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.accordion__btn {
+  cursor: pointer;
+}
+
+.accordion__btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.accordion__btn-img {
+  color: var(--blue);
+}
+
+.accordion__content {
+  display: none;
+}
+
+.accordion__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+.accordion__wrapper--open .accordion__content {
+  display: block;
+}
+
+.accordion__wrapper--open .accordion__btn-img {
+  transform: rotate(180deg);
+  color: var(--red);
 }
 
 /* RETINA BG */
