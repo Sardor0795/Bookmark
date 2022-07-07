@@ -636,6 +636,10 @@ select:-webkit-autofill:focus {
   text-align: left;
 }
 
+.accordion__text:not(:last-child){
+  margin-bottom: 15px;
+}
+
 .accordion__wrapper--open .accordion__content {
   display: block;
 }
