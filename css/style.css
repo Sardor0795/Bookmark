@@ -803,6 +803,10 @@ select:-webkit-autofill:focus {
   color: var(--red);
 }
 
+.footer__social-link:active {
+  opacity: 0.6;
+}
+
 .footer__social-img {
   display: block;
 }
