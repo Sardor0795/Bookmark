@@ -16,38 +16,6 @@ const opener = {
   accordionOpen: "accordion__wrapper--open",
 }
 
-const removePreviousActiveEls = function () {
-  if( evt.target.previousElementSibling ){
-
-    if ( evt.target.previousElementSibling.classList.contains(opener.featureBtn) ) {
-      evt.target.previousElementSibling.classList.remove(opener.featureBtn);
-    }
-
-    if( evt.target.previousElementSibling.previousElementSibling ) {
-        if ( evt.target.previousElementSibling.previousElementSibling.classList.contains(opener.featureBtn)
-        ) {
-          evt.target.previousElementSibling.previousElementSibling.classList.remove(opener.featureBtn);
-        }
-    }
-  }
-}
-
-const removeNextActiveEls = function () {
-  if( evt.target.nextElementSibling ){
-
-    if ( evt.target.nextElementSibling.classList.contains(opener.featureBtn) ) {
-      evt.target.nextElementSibling.classList.remove(opener.featureBtn);
-    }
-
-    if( evt.target.nextElementSibling.nextElementSibling ) {
-        if ( evt.target.nextElementSibling.nextElementSibling.classList.contains(opener.featureBtn)
-        ) {
-          evt.target.nextElementSibling.nextElementSibling.classList.remove(opener.featureBtn);
-        }
-    }
-  }
-}
-
 const closeAllAccordions = function () {
   elsAccordionWrapper.forEach(function (elAccordionWrapper) {
     elAccordionWrapper.classList.remove(opener.accordionOpen)
@@ -59,9 +27,33 @@ elBtnWrapper.addEventListener("click", function (evt) {
 
   if ( evt.target.classList.contains("features__btn")) {
 
-    removePreviousActiveEls();
+    if( evt.target.previousElementSibling ){
 
-    removeNextActiveEls();
+      if ( evt.target.previousElementSibling.classList.contains(opener.featureBtn) ) {
+        evt.target.previousElementSibling.classList.remove(opener.featureBtn);
+      }
+
+      if( evt.target.previousElementSibling.previousElementSibling ) {
+          if ( evt.target.previousElementSibling.previousElementSibling.classList.contains(opener.featureBtn)
+          ) {
+            evt.target.previousElementSibling.previousElementSibling.classList.remove(opener.featureBtn);
+          }
+      }
+    }
+
+    if( evt.target.nextElementSibling ){
+
+      if ( evt.target.nextElementSibling.classList.contains(opener.featureBtn) ) {
+        evt.target.nextElementSibling.classList.remove(opener.featureBtn);
+      }
+
+      if( evt.target.nextElementSibling.nextElementSibling ) {
+          if ( evt.target.nextElementSibling.nextElementSibling.classList.contains(opener.featureBtn)
+          ) {
+            evt.target.nextElementSibling.nextElementSibling.classList.remove(opener.featureBtn);
+          }
+      }
+    }
 
     evt.target.classList.add(opener.featureBtn);
 
